@@ -1,0 +1,13 @@
+.year {
+  display: flex;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 20px 10px 20px;
+}

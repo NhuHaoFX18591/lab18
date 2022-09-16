@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Page</title>
+
+    <link rel="canonical" href="getbootstrap.com/docs/5.0/examples/carousel" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Khối Slide -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <!-- Nút theo dõi trang -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleC  n n aptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slides -->
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="/img/background1.jpg"
+            class="d-block w-100 bg-img1"
+            alt="ice-cave"
+          />
+          <div class="carousel-caption text-start">
+            <h1>Come and explore</h1>
+            <p>
+              Some representative placeholder content for the first slide of the
+              carousel.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" rel="sign-up-btn"
+                >Sign up today</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="/img/background2.jpg"
+            class="d-block w-100 bg-img2"
+            alt="top-view-road"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Smooth & nice drive</h1>
+            <p>Some representative placeholder content for the second slide.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" rel="sign-up-btn"
+                >Don't miss it</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="/img/background3.jpg"
+            class="d-block w-100 bg-img3"
+            alt="cliff-in-ocean"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Breath taking Cliff</h1>
+            <p>Some representative placeholder content for the third slide.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" rel="sign-up-btn"
+                >Contact us</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nút sang trái, sang phải -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="year">
+        @ 2017 - 2021 Company, Inc
+        <ul>
+          <li><a href="#" rel="privacy">Privacy</a></li>
+          <li><a href="#" rel="term">Terms</a></li>
+        </ul>
+      </div>
+      <div><a href="#navbar" rel="back-to-top">Back to top</a></div>
+    </footer>
+
+    <!-- popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
